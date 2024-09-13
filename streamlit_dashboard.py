@@ -7,21 +7,21 @@ from streamlit_lottie import st_lottie
 
 # Kafka configuration
 consumer_conf_predicted = {
-    'bootstrap.servers': 'SASL_SSL://pkc-56d1g.eastus.azure.confluent.cloud:9092',
+    'bootstrap.servers': '<YOUR_BOOTSTRAP_SERVER>',
     'security.protocol': 'SASL_SSL',
     'sasl.mechanisms': 'PLAIN',
-    'sasl.username': 'H43DZCJGXQP53UQI',
-    'sasl.password': '6+Jor2ufexs0oSJ6LQscIW068mOkUUcmr59e0dg7MxuAPSMB7qMordT+lnpbk2Yw',
+    'sasl.username': '<YOUR_API_KEY>',
+    'sasl.password': '<YOUR_SECRET>',
     'group.id': 'predicted-dashboard-group-streamlit-updateddd',
     'auto.offset.reset': 'earliest'
 }
 
 consumer_conf_realtime = {
-    'bootstrap.servers': 'SASL_SSL://pkc-56d1g.eastus.azure.confluent.cloud:9092',
+     'bootstrap.servers': '<YOUR_BOOTSTRAP_SERVER>',
     'security.protocol': 'SASL_SSL',
     'sasl.mechanisms': 'PLAIN',
-    'sasl.username': 'H43DZCJGXQP53UQI',
-    'sasl.password': '6+Jor2ufexs0oSJ6LQscIW068mOkUUcmr59e0dg7MxuAPSMB7qMordT+lnpbk2Yw',
+    'sasl.username': '<YOUR_API_KEY>',
+    'sasl.password': '<YOUR_SECRET>',
     'group.id': 'realtime-dashboard-group-streamlit-updateddd',
     'auto.offset.reset': 'earliest'
 }
