@@ -12,21 +12,21 @@ ethereum_model = tf.keras.models.load_model('ethereum_prediction_model.keras')
 
 # Kafka configuration
 consumer_conf = {
-    'bootstrap.servers': 'SASL_SSL://pkc-56d1g.eastus.azure.confluent.cloud:9092',
+    'bootstrap.servers': '<YOUR_BOOTSTRAP_SERVER>',
     'security.protocol': 'SASL_SSL',
     'sasl.mechanisms': 'PLAIN',
-    'sasl.username': 'H43DZCJGXQP53UQI',
-    'sasl.password': '6+Jor2ufexs0oSJ6LQscIW068mOkUUcmr59e0dg7MxuAPSMB7qMordT+lnpbk2Yw',
-    'group.id': 'latest-crypto-price-predictorrr',
+    'sasl.username': '<YOUR_API_KEY>',
+    'sasl.password': '<YOUR_SECRET>',
+    'group.id': '<GROUP_ID>',
     'auto.offset.reset': 'earliest'
 }
 
 producer_conf = {
-    'bootstrap.servers': 'SASL_SSL://pkc-56d1g.eastus.azure.confluent.cloud:9092',
+     'bootstrap.servers': '<YOUR_BOOTSTRAP_SERVER>',
     'security.protocol': 'SASL_SSL',
     'sasl.mechanisms': 'PLAIN',
-    'sasl.username': 'H43DZCJGXQP53UQI',
-    'sasl.password': '6+Jor2ufexs0oSJ6LQscIW068mOkUUcmr59e0dg7MxuAPSMB7qMordT+lnpbk2Yw',
+    'sasl.username': '<YOUR_API_KEY>',
+    'sasl.password': '<YOUR_SECRET>',
     'client.id': 'crypto-producer'
 }
 
