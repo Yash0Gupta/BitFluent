@@ -96,7 +96,7 @@ You must configure the **bootstrap server URL**, **API key**, and **secret** for
   ![Dashboard Screenshot 2](d2.png)
 
 ## Video Demonstration
-- Watch the [dashboard in action](recording.webm).
+- Watch the [dashboard in action](recording.mp4).
 
 ## Future Enhancements
 - Implement additional cryptocurrency models.
